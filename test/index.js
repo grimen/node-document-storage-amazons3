@@ -20,7 +20,7 @@ if (!process.env[ENV_PREFIX + '_URL_UNAUTHORIZED']) {
 //  Test
 // --------------------
 
-var Storage = require('../../node-document-storage');
+var Storage = require('node-document-storage');
 
 module.exports = Storage.Spec('AmazonS3', {
   module: require('..'),

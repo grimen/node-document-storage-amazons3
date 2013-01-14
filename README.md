@@ -1,4 +1,4 @@
-# NODE-DOCUMENT-STORAGE-REDIS [![Build Status](https://secure.travis-ci.org/grimen/node-document-storage-redis.png)](http://travis-ci.org/grimen/node-document-storage-redis)
+# NODE-DOCUMENT-STORAGE-AMAZONS3 [![Build Status](https://secure.travis-ci.org/grimen/node-document-storage-amazons3.png)](http://travis-ci.org/grimen/node-document-storage-amazons3)
 
 **Storage** adapter [amazons3](http://aws.amazon.com/s3) for [node-document](https://github.com/grimen/node-document) ODM for Node.js.
 
@@ -6,7 +6,7 @@
 ## Installation
 
 ```shell
-  $ npm install node-document-storage-redis
+  $ npm install node-document-storage-amazons3
 ```
 
 
