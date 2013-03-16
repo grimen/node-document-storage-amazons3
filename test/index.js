@@ -25,6 +25,8 @@ var Storage = require('node-document-storage');
 module.exports = Storage.Spec('AmazonS3', {
   module: require('..'),
   engine: require('knox'),
+  id: 'amazons3',
+  protocol: 'https',
   db: 'node-document-default-test',
   default_url: 'https://s3.amazonaws.com/node-document-default-test',
   authorized_url: undefined,
@@ -41,13 +43,11 @@ module.exports = Storage.Spec('AmazonS3', {
 
       var client = require('knox').createClient({key: auth.key, secret: auth.secret, bucket: db});
 
-      console.log(auth, db)
       client
         .get(key, {'Content-Type': 'application/json'})
         .on('response', function(res){
           res.setEncoding('utf8');
 
-          console.log(res, res.statusCode)
           var error = null, body = '';
 
           res.on('data', function(data){
